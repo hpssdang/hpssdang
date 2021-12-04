@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    
+    min-height: 200vh;
+
+}
+header{
+    
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    padding: 2.5rem 6.25rem;
+    z-index: 500000;
+}
+header.sticky{
+    padding: 1.5rem 6.25rem;
+    background: #03fccf;
+    box-shadow: 0.25rem 0.25rem 80px #000;
+   
+}
+.logo{
+    
+    height: 2rem;
+    width: 4rem;
+    transition: 0.6s;
+    position: relative;
+
+}
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li {
+    position: relative;
+    list-style: none;
+
+}
+header ul li a{
+    position: relative;
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 0.01rem;
+    font-weight: 400;
+    transition: 0.5s;
+
+}
+.maintext{
+    text-align: center;
+    padding-top: 30rem;
+    font-size: 2rem;
+}
+#banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background:url(logo.png) ;
+    background-size: cover;
+
+}
+
+header.sticky .logo ,
+header.sticky ul li a {
+    color: black;
+}
+li.active a {
+    color: #d4ff00;
+}
+
+.idtext{
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* Services */
+#Services{
+    height: 80vh;
+}
+#txt{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#shape{
+    height: 0.375rem;
+    width: 5rem;
+    background-color: yellow;
+    align-items: center;
+    justify-content: center;
+}
+
+.facilities{
+    width: 100%;
+    height: 200px;
+    padding: 1rem;
+
+}
+
+.facilities ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    
+}
+.facilities ul li {
+    max-width: 500px;
+    font-size: 22px;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
+
+/* About Us */
+#About{
+    height: 300vh;
+}
+.photos{
+    width: 20rem;
+    height: 20rem;
+}
+.text1{
+    font-size: 1.6rem;
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+.text2{
+    font-size: 1.6rem;
+    padding: 0.1rem;
+    
+}
+.text2  a {
+    font-size: 1.6rem;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    padding-bottom: 1rem;
+}
+.teacher {
+    
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.teacher img{
+    width: 18rem;
+    height: 18rem;
+}
+.info-of-teacher{
+    font-size: 1.6rem;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 770px) {
+    
+    
+    #banner{
+    height: 200vh;
+
+    }
+    #Services{
+    height: 160vh;
+
+    }
+    #About{
+    height: 600vh;
+    }
+    #Contact {
+
+    }
+}
